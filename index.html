@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Store - OFFICIAL STORE</title>
+    <title>Aura Luxe - OFFICIAL STORE</title>
 
     <!-- خط تجوال الفاخر -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -17,6 +17,11 @@
 
       ttq.load('DAMP49BC77U9OQ6PM560');
       ttq.page();
+      
+      // حدث مشاهدة الصفحة تلقائياً
+      ttq.ready(function() {
+          ttq.track('ViewContent');
+      });
     }(window, document, 'ttq');
 
     // دالة الانتقال الفوري للواتساب بدون أي تأخير
@@ -48,6 +53,8 @@
             min-height: 100vh;
             justify-content: space-between;
             padding-bottom: 90px; /* مسافة لكي لا يغطي الشريط السفلي المحتوى */
+            overflow: hidden; /* إلغاء السكرول نهائياً */
+            height: 100vh;
         }
         .main-container {
             display: flex;
@@ -208,11 +215,11 @@
             </svg>
         </div>
 
-        <h1>Beauty Store</h1>
+        <h1>Aura Luxe</h1>
         <div class="subtitle">OFFICIAL STORE</div>
 
         <!-- زر الواتساب الدائري الرئيسي مع الانتقال الفوري -->
-        <a href="https://wa.me/972567728417?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%3F" 
+        <a href="https://wa.me/972595102346?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%3F" 
            class="whatsapp-circle-btn" 
            onclick="openWhatsAppWithTracking(event, this.href)" 
            aria-label="راسلنا عبر واتساب">
@@ -231,7 +238,7 @@
 
     <!-- شريط أسفل الصفحة يحمل زر الواتساب الأخضر النحيف والأنيق -->
     <div class="footer-container">
-        <a href="https://wa.me/972567728417?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%85%D9%86%D8%A9..." 
+        <a href="https://wa.me/972595102346?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%3F" 
            class="whatsapp-green-btn" 
            onclick="openWhatsAppWithTracking(event, this.href)">
             <svg viewBox="0 0 24 24">
