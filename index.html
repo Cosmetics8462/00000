@@ -39,6 +39,11 @@
             margin: 0;
             padding: 0;
         }
+        /* إلغاء التمرير تماماً وثبات الصفحة */
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
         body {
             font-family: 'Tajawal', sans-serif;
             background-color: #0b0b0b;
@@ -46,7 +51,6 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
             justify-content: space-between;
             padding-bottom: 90px; /* مسافة لكي لا يغطي الشريط السفلي المحتوى */
         }
@@ -55,39 +59,39 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 50px 20px 20px 20px;
+            padding: 20px 20px 10px 20px;
             flex: 1;
         }
         .store-icon-box {
-            width: 85px;
-            height: 85px;
+            width: 75px;
+            height: 75px;
             background: linear-gradient(135deg, #1c1c1c, #0f0f0f);
             border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 26px;
+            border-radius: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1);
         }
         .store-icon-box svg {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             stroke: #d4af37;
         }
         h1 {
             color: #ffffff;
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 900;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             letter-spacing: 1.5px;
         }
         .subtitle {
             color: #d4af37;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
             letter-spacing: 4px;
-            margin-bottom: 45px;
+            margin-bottom: 30px;
             text-transform: uppercase;
         }
 
@@ -96,11 +100,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 125px;
-            height: 125px;
+            width: 110px;
+            height: 110px;
             background: linear-gradient(145deg, #25d366, #1ebe5d);
             border-radius: 50%;
-            margin: 0 auto 25px auto;
+            margin: 0 auto 20px auto;
             box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
             text-decoration: none;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -115,27 +119,27 @@
             box-shadow: 0 5px 15px rgba(18, 140, 126, 0.5), inset 0 3px 6px rgba(0, 0, 0, 0.3);
         }
         .whatsapp-circle-btn svg {
-            width: 65px;
-            height: 65px;
+            width: 55px;
+            height: 55px;
             fill: #ffffff;
         }
 
         .action-label {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 900;
             color: #ffffff;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         .action-sub {
-            font-size: 14px;
+            font-size: 13px;
             color: #b0b0b0;
             font-weight: 500;
-            margin-bottom: 35px;
+            margin-bottom: 25px;
         }
         .welcome-text {
-            font-size: 15px;
+            font-size: 14px;
             color: #999999;
-            line-height: 1.9;
+            line-height: 1.8;
             max-width: 350px;
             margin: 0 auto;
             font-weight: 400;
@@ -232,7 +236,7 @@
 
     <!-- شريط أسفل الصفحة يحمل زر الواتساب الأخضر النحيف والأنيق -->
     <div class="footer-container">
-        <a href="https://wa.me/972566866998?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%B5%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%3F" 
+        <a href="https://wa.me/972566866998?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%B5%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%85%D8%A7%D9%84%D9%81%D8%A9%3F" 
            class="whatsapp-green-btn" 
            onclick="openWhatsAppWithTracking(event, this.href)">
             <svg viewBox="0 0 24 24">
